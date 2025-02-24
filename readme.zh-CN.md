@@ -20,7 +20,7 @@
   "mcpServers": {
     "tavily": {
       "command": "npx",
-      "args": ["-y", "@agtools/mcp-tavily"],
+      "args": ["-y", "@mcptools/mcp-tavily"],
       "env": {
         "TAVILY_API_KEY": "your-api-key"
       }
@@ -197,6 +197,16 @@ npm test
 ```bash
 npm run build
 ```
+
+## 使用 MCP Inspector 调试
+
+我们推荐使用 [MCP Inspector](https://github.com/modelcontextprotocol/inspector) 作为开发调试工具，它是一个强大的 MCP 服务器开发工具。
+
+Inspector 提供了以下功能的用户界面：
+- 测试工具调用
+- 查看服务器响应
+- 调试工具执行
+- 监控服务器状态
 
 ## 贡献
 
