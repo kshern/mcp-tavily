@@ -17,7 +17,7 @@ const server = new McpServer({
 // 添加搜索工具
 server.tool(
   "search",
-  "Perform a basic web search using Tavily API. Returns search results including title, content and URL.",
+  "Perform a basic web search. Returns search results including title, content and URL.",
   {
     query: z.string().describe("Search query"),
     options: z
@@ -60,7 +60,7 @@ server.tool(
 // 添加搜索工具
 server.tool(
   "searchContext",
-  "Perform a context-aware web search using Tavily API. Optimized for retrieving contextually relevant results.",
+  "Perform a context-aware web search. Optimized for retrieving contextually relevant results.",
   {
     query: z.string().describe("Search query"),
     options: z.object({
@@ -101,7 +101,7 @@ server.tool(
 // 添加搜索工具
 server.tool(
   "searchQNA",
-  "Perform a question-answering search using Tavily API. Best suited for direct questions that need specific answers.",
+  "Perform a question-answering search. Best suited for direct questions that need specific answers.",
   {
     query: z.string().describe("Search query"),
     options: z.object({
@@ -141,7 +141,7 @@ server.tool(
 // 添加extract工具
 server.tool(
   "extract",
-  "Extract and process content from a list of URLs using Tavily API. Can handle up to 20 URLs at once.",
+  "Extract and process content from a list of URLs. Can handle up to 20 URLs at once.",
   {
     urls: z.array(z.string()).describe("list of URLs to extract content from (max 20)"),
     options: z.object({
