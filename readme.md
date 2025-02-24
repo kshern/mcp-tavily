@@ -25,7 +25,7 @@ Add the Tavily MCP server to your MCP configuration:
   "mcpServers": {
     "tavily": {
       "command": "npx",
-      "args": ["-y", "@agtools/mcp-tavily"],
+      "args": ["-y", "@mcptools/mcp-tavily"],
       "env": {
         "TAVILY_API_KEY": "your-api-key"
       }
@@ -161,13 +161,13 @@ npx -y @smithery/cli install @kshern/mcp-tavily --client claude
 
 ### Manual Installation
 ```bash
-npm install @agtools/mcp-tavily
+npm install @mcptools/mcp-tavily
 ```
 
 Or use it directly with npx:
 
 ```bash
-npx @agtools/mcp-tavily
+npx @mcptools/mcp-tavily
 ```
 
 ## Development
