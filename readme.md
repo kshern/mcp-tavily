@@ -1,5 +1,7 @@
 # MCP Tavily
 
+[![smithery badge](https://smithery.ai/badge/@kshern/mcp-tavily)](https://smithery.ai/server/@kshern/mcp-tavily)
+
 [中文文档](./readme.zh-CN.md)
 
 A Model Context Protocol (MCP) server implementation for Tavily API, providing advanced search and content extraction capabilities.
@@ -23,7 +25,7 @@ Add the Tavily MCP server to your MCP configuration:
   "mcpServers": {
     "tavily": {
       "command": "npx",
-      "args": ["-y", "@mcptools/mcp-tavily"],
+      "args": ["-y", "@agtools/mcp-tavily"],
       "env": {
         "TAVILY_API_KEY": "your-api-key"
       }
@@ -149,14 +151,23 @@ All tools include proper error handling and will throw descriptive error message
 
 ## Installation
 
+### Installing via Smithery
+
+To install Tavily API Server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@kshern/mcp-tavily):
+
 ```bash
-npm install @mcptools/mcp-tavily
+npx -y @smithery/cli install @kshern/mcp-tavily --client claude
+```
+
+### Manual Installation
+```bash
+npm install @agtools/mcp-tavily
 ```
 
 Or use it directly with npx:
 
 ```bash
-npx @mcptools/mcp-tavily
+npx @agtools/mcp-tavily
 ```
 
 ## Development
@@ -190,17 +201,6 @@ npm test
 ```bash
 npm run build
 ```
-
-## Debugging with MCP Inspector
-
-For development and debugging, we recommend using [MCP Inspector](https://github.com/modelcontextprotocol/inspector), a powerful development tool for MCP servers.
-
-
-The Inspector provides a user interface for:
-- Testing tool calls
-- Viewing server responses
-- Debugging tool execution
-- Monitoring server state
 
 ## Contributing
 
