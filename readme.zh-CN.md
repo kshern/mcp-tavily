@@ -151,19 +151,28 @@ interface ExtractOptions {
 ## 支持
 
 如有任何问题：
-- Tavily API：请参考 [Tavily文档](https://docs.tavily.com/)
-- MCP集成：请参考 [MCP文档](https://docs.mcpcn.org/)
+- Tavily API：请参考 [Tavily 文档](https://docs.tavily.com/)
+- MCP 集成：请参考 [MCP 文档](https://modelcontextprotocol.io//)
 
 ## 安装
 
+### 通过 Smithery 安装
+
+通过 [Smithery](https://smithery.ai/server/@kshern/mcp-tavily) 自动安装 Tavily API Server for Claude Desktop：
+
 ```bash
-npm install @agtools/mcp-tavily
+npx -y @smithery/cli install @kshern/mcp-tavily --client claude
+```
+
+### 手动安装
+```bash
+npm install @mcptools/mcp-tavily
 ```
 
 或直接使用 npx：
 
 ```bash
-npx @agtools/mcp-tavily
+npx @mcptools/mcp-tavily
 ```
 
 ## 开发
@@ -186,11 +195,6 @@ npm install
 export TAVILY_API_KEY=your_api_key
 ```
 
-### 运行测试
-
-```bash
-npm test
-```
 
 ### 构建
 
@@ -217,3 +221,13 @@ Inspector 提供了以下功能的用户界面：
 3. 提交更改 (`git commit -m '添加某个特性'`)
 4. 推送到分支 (`git push origin feature/AmazingFeature`)
 5. 开启 Pull Request
+
+## License
+
+MIT License。
+
+## 支持
+
+如有任何问题，请参考:
+- Tavily API：请参考 [Tavily 文档](https://docs.tavily.com/)
+- MCP 集成：请参考 [MCP 中文文档](https://docs.mcpcn.org//)

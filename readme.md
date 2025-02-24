@@ -170,7 +170,7 @@ Or use it directly with npx:
 npx @mcptools/mcp-tavily
 ```
 
-## Development
+
 
 ### Prerequisites
 
@@ -190,17 +190,23 @@ npm install
 export TAVILY_API_KEY=your_api_key
 ```
 
-### Running Tests
-
-```bash
-npm test
-```
 
 ### Building
 
 ```bash
 npm run build
 ```
+
+## Debugging with MCP Inspector
+
+For development and debugging, we recommend using [MCP Inspector](https://github.com/modelcontextprotocol/inspector), a powerful development tool for MCP servers.
+
+
+The Inspector provides a user interface for:
+- Testing tool calls
+- Viewing server responses
+- Debugging tool execution
+- Monitoring server state
 
 ## Contributing
 
