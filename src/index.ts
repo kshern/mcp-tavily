@@ -11,7 +11,7 @@ const tvly = tavily({ apiKey: process.env.TAVILY_API_KEY });
 // 创建MCP服务器
 const server = new McpServer({
   name: "Tavily Search MCP Server",
-  version: "0.3.1"
+  version: "1.0.0"
 });
 
 // 添加搜索工具
