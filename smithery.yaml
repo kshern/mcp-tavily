@@ -1,0 +1,23 @@
+# Smithery configuration file: https://smithery.ai/docs/config#smitheryyaml
+
+startCommand:
+  type: stdio
+  configSchema:
+    # JSON Schema defining the configuration options for the MCP.
+    type: object
+    required:
+      - tavilyApiKey
+    properties:
+      tavilyApiKey:
+        type: string
+        description: API key for the Tavily service
+  commandFunction:
+    # A function that produces the CLI command to start the MCP on stdio.
+    |-
+    (config) => ({
+      command: 'npm',
+      args: ['start'],
+      env: { TAVILY_API_KEY: config.tavilyApiKey }
+    })
+  exampleConfig:
+    tavilyApiKey: your-tavily-api-key-here
