@@ -4,7 +4,7 @@ import { z } from "zod";
 import { tavily } from "@tavily/core";
 
 // 初始化 Tavily 客户端
-const tvly = tavily({ apiKey: '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' });
+const tvly = tavily({ apiKey: process.env.TAVILY_API_KEY });
 
 // 创建MCP服务器
 const server = new McpServer({

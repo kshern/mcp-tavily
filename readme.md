@@ -25,12 +25,14 @@ Add the Tavily MCP server to your MCP configuration:
       "command": "npx",
       "args": ["-y", "@agtools/mcp-tavily"],
       "env": {
-        "TAVILY_API_KEY": "tvly-YOUR_API_KEY"
+        "TAVILY_API_KEY": "your-api-key"
       }
     }
   }
 }
 ```
+
+> Note: Make sure to replace `your-api-key` with your actual Tavily API key. You can also set it as an environment variable `TAVILY_API_KEY` before running the server.
 
 ## API Reference
 
@@ -144,6 +146,60 @@ For extracted content, each item includes:
 ## Error Handling
 
 All tools include proper error handling and will throw descriptive error messages if something goes wrong.
+
+## Installation
+
+```bash
+npm install @agtools/mcp-tavily
+```
+
+Or use it directly with npx:
+
+```bash
+npx @agtools/mcp-tavily
+```
+
+## Development
+
+### Prerequisites
+
+- Node.js 16 or higher
+- npm or yarn
+- Tavily API key (get one from [Tavily](https://tavily.com))
+
+### Setup
+
+1. Clone the repository
+2. Install dependencies:
+```bash
+npm install
+```
+3. Set your Tavily API key:
+```bash
+export TAVILY_API_KEY=your_api_key
+```
+
+### Running Tests
+
+```bash
+npm test
+```
+
+### Building
+
+```bash
+npm run build
+```
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
 ## License
 

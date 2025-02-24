@@ -22,12 +22,14 @@
       "command": "npx",
       "args": ["-y", "@agtools/mcp-tavily"],
       "env": {
-        "TAVILY_API_KEY": "tvly-YOUR_API_KEY"
+        "TAVILY_API_KEY": "your-api-key"
       }
     }
   }
 }
 ```
+
+> 注意：请确保将 `your-api-key` 替换为你的实际 Tavily API 密钥。你也可以在运行服务器之前将其设置为环境变量 `TAVILY_API_KEY`。
 
 ## API参考
 
@@ -151,3 +153,57 @@ interface ExtractOptions {
 如有任何问题：
 - Tavily API：请参考 [Tavily文档](https://docs.tavily.com/)
 - MCP集成：请参考 [MCP文档](https://docs.mcpcn.org/)
+
+## 安装
+
+```bash
+npm install @agtools/mcp-tavily
+```
+
+或直接使用 npx：
+
+```bash
+npx @agtools/mcp-tavily
+```
+
+## 开发
+
+### 环境要求
+
+- Node.js 16 或更高版本
+- npm 或 yarn
+- Tavily API 密钥 (从 [Tavily](https://tavily.com) 获取)
+
+### 设置
+
+1. 克隆仓库
+2. 安装依赖：
+```bash
+npm install
+```
+3. 设置 Tavily API 密钥：
+```bash
+export TAVILY_API_KEY=your_api_key
+```
+
+### 运行测试
+
+```bash
+npm test
+```
+
+### 构建
+
+```bash
+npm run build
+```
+
+## 贡献
+
+欢迎提交贡献！请随时提交 Pull Request。
+
+1. Fork 仓库
+2. 创建特性分支 (`git checkout -b feature/AmazingFeature`)
+3. 提交更改 (`git commit -m '添加某个特性'`)
+4. 推送到分支 (`git push origin feature/AmazingFeature`)
+5. 开启 Pull Request
