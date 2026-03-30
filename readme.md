@@ -36,6 +36,10 @@ Add the Tavily MCP server to your MCP configuration:
 
 > Note: Make sure to replace `your-api-key` with your actual Tavily API key. You can also set it as an environment variable `TAVILY_API_KEY` before running the server.
 
+## Hosted deployment
+
+A hosted deployment is available on [Fronteir AI](https://fronteir.ai/mcp/kshern-mcp-tavily).
+
 ## API Reference
 
 ### Search Tools
