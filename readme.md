@@ -1,6 +1,6 @@
 # MCP Tavily
 
-[![smithery badge](https://smithery.ai/badge/@kshern/mcp-tavily)](https://smithery.ai/server/@kshern/mcp-tavily)
+[![LightNow capabilities](https://lightnow.ai/badge/io.github.kshern/mcp-tavily)](https://lightnow.ai/servers/io.github.kshern/mcp-tavily)
 
 [中文文档](./readme.zh-CN.md)
 
